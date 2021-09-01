@@ -28,7 +28,7 @@ HTML;
 			<?php endif; ?>
 			<span class="at">
                 <?= $line !== null ? 'at line' : '' ?>
-                <a href="ide://open?url=file://<?= $file ?>&line=<?= $line ?>"><span class="line"><?= $line !== null ? $line + 1 : '' ?></span></a>
+                <a href="phpstorm://open?url=file://<?= $file ?>&line=<?= $line + 1 ?>"><span class="line"><?= $line !== null ? $line + 1 : '' ?></span></a>
             </span>
 			<?php if ($method !== null): ?>
 				<span class="call">
@@ -43,7 +43,7 @@ HTML;
 			<div class="error-line"></div>
 			<?php for ($i = $begin; $i <= $end; ++$i): ?><div class="hover-line"></div><?php endfor; ?>
 			<div class="code">
-				<?php for ($i = $begin; $i <= $end; ++$i): ?><span class="lines-item"><?= (int) ($i + 1) ?></span><?php endfor; ?>
+				<?php for ($i = $begin; $i <= $end; ++$i): ?><a href="phpstorm://open?url=file://<?= $file ?>&line=<?= (int) ($i + 1) ?>"><span class="lines-item"><?= (int) ($i + 1) ?></span></a><?php endfor; ?>
 				<pre><?php
 					// fill empty lines with a whitespace to avoid rendering problems in opera
 					for ($i = $begin; $i <= $end; ++$i) {
