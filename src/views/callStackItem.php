@@ -8,7 +8,10 @@
 /* @var $begin int */
 /* @var $end int */
 /* @var $args array */
-/* @var $handler \phuong17889\errorhandler\ErrorHandler */
+/* @var $handler ErrorHandler */
+
+use phuong17889\errorhandler\ErrorHandler;
+
 $html = <<<HTML
 IDE
 <svg class="icon icon--new-window" focusable="false" aria-hidden="true" width="16" height="16">
