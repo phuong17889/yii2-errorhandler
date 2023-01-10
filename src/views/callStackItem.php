@@ -10,7 +10,7 @@
 /* @var $args array */
 /* @var $handler ErrorHandler */
 
-use phuong17889\errorhandler\ErrorHandler;
+use phuongdev89\errorhandler\ErrorHandler;
 
 $html = <<<HTML
 IDE

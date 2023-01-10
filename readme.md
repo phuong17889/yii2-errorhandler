@@ -1,7 +1,7 @@
 
 # Installation #
 ## Dependent ##
-Must have [phpstorm-protocol](https://github.com/phuong17889/phpstorm-protocol) before
+Must have [phpstorm-protocol](https://github.com/phuongdev89/phpstorm-protocol) before
 
 ## Composer ##
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
@@ -9,13 +9,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist phuong17889/yii2-errorhandler "@dev"
+php composer.phar require --prefer-dist phuongdev89/yii2-errorhandler "@dev"
 ```
 
 or add
 
 ```
-"phuong17889/yii2-errorhandler": "@dev"
+"phuongdev89/yii2-errorhandler": "@dev"
 ```
 
 to the require section of your `composer.json` file.
@@ -25,7 +25,7 @@ to the require section of your `composer.json` file.
 ```
     'components' => [
         'errorHandler' => [
-            'class' => \phuong17889\errorhandler\ErrorHandler::class,
+            'class' => \phuongdev89\errorhandler\ErrorHandler::class,
         ], 
     ],
 ```

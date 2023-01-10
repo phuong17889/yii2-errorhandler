@@ -1,10 +1,10 @@
 <?php
 
-namespace phuong17889\errorhandler;
+namespace phuongdev89\errorhandler;
 class ErrorHandler extends \yii\web\ErrorHandler
 {
 
-    public $callStackItemView = '@phuong17889/errorhandler/views/callStackItem.php';
+    public $callStackItemView = '@phuongdev89/errorhandler/views/callStackItem.php';
 
     public $errorAction = 'site/error';
 }

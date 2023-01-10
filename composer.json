@@ -1,5 +1,5 @@
 {
-	"name" : "phuong17889/yii2-errorhandler",
+	"name" : "phuongdev89/yii2-errorhandler",
 	"description" : "Yii2 Error Handle",
 	"type" : "yii2-extension",
 	"license" : "MIT",
@@ -10,13 +10,13 @@
 	],
 	"authors" : [
 		{
-			"name" : "Le Phuong",
-			"email" : "phuong17889@gmail.com",
+			"name" : "Phuong Dev",
+			"email" : "phuongdev89@gmail.com",
 			"role" : "Developer"
 		}
 	],
 	"support" : {
-		"source" : "https://github.com/phuong17889/yii2-errorhandler"
+		"source" : "https://github.com/phuongdev89/yii2-errorhandler"
 	},
 	"minimum-stability" : "stable",
 	"require" : {
@@ -25,7 +25,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"phuong17889\\errorhandler\\" : "src/"
+			"phuongdev89\\errorhandler\\" : "src/"
 		}
 	}
 }
