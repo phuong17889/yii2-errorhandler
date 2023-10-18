@@ -26,11 +26,7 @@ If [phpstorm-protocol](https://github.com/phuongdev89/phpstorm-protocol) install
 ```
 <a href="phpstorm://open?url=file://{file}&line={line}">{html}</a>
 ```
-#### $useDocker
-Type: `bool`  
-Default: `false`  
-If you are using docker to deploy this project, set it `true`
-#### $tracePathMappings
+#### $projectDirectionMap
 Type: `array|null`  
 Default: `null`  
 In docker container, project directory is `/app` maybe different with your IDE, just map it
@@ -42,8 +38,7 @@ In docker container, project directory is `/app` maybe different with your IDE, 
             'class' => \phuongdev89\errorhandler\ErrorHandler::class,
             /**
             'traceLine' => '<a href="phpstorm://open?url=file://{file}&line={line}">{html}</a>',
-            'useDocker' => true,
-            'tracePathMappings' => [
+            'projectDirectionMap' => [
                 '/app' => 'D:\\Ampps\\www\mofiex-com'
             ]
             */

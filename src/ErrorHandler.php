@@ -12,13 +12,6 @@ class ErrorHandler extends \yii\web\ErrorHandler
     public $errorAction = 'site/error';
 
     /**
-     * If you are using docker to deploy this project, set it "true"
-     * Default is "false"
-     * @var bool
-    */
-    public $useDocker = false;
-
-    /**
      * In docker container, project directory is "/app" maybe different with your IDE, just map it
      * Only effect if $useDocker is "true"
      * @example ['/app' => 'D:\\Ampps\\www\\project']
@@ -45,10 +38,8 @@ class ErrorHandler extends \yii\web\ErrorHandler
             $end = $line + $half < $lineCount ? $line + $half : $lineCount - 1;
         }
 
-        if ($this->useDocker) {
-            foreach ($this->tracePathMappings as $source => $target) {
-                $file = str_replace($source, $target, $file);
-            }
+        foreach ($this->tracePathMappings as $source => $target) {
+            $file = str_replace($source, $target, $file);
         }
 
         return $this->renderFile($this->callStackItemView, [
